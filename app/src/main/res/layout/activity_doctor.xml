@@ -25,20 +25,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Todo List"
+            android:text="Doctor List"
             fontPath="fonts/nunito_extra_bold.ttf"
             android:textStyle="bold"
             android:textColor="@color/colorAccent"
             android:textSize="28sp"
             android:layout_gravity="center"
             tools:ignore="MissingPrefix" />
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="right|center"
-            android:background="@drawable/calendar"
-            android:id="@+id/calendar"/>
 
     </FrameLayout>
 
@@ -53,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/bg02"
+            android:background="@drawable/bg01"
             >
 
             <androidx.recyclerview.widget.RecyclerView
@@ -66,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="70dp"
-            android:text="Add Task"
+            android:text="Add a new doctor"
             android:drawablePadding="10dp"
             android:paddingTop="10dp"
             android:id="@+id/addTask"

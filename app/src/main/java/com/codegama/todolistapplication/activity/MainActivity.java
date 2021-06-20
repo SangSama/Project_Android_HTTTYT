@@ -33,7 +33,6 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
 
     Button btBackhome;
     @BindView(R.id.taskRecycler)
-            //BindView
     RecyclerView taskRecycler;
     @BindView(R.id.addTask)
     TextView addTask;

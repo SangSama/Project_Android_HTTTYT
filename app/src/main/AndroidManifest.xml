@@ -12,15 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.LoginActivity">
+
+        </activity>
+        <activity android:name=".activity.AlarmActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.DoctorActivity" />
+        <activity android:name=".activity.StaffActivity" />
+        <activity android:name=".activity.TodolistActivity" />
+        <activity android:name=".activity.ReportActivity" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.AlarmActivity" />
-        <activity android:name=".activity.HomeActivity" />
-        <activity android:name=".activity.MainActivity"></activity>
 
         <receiver
             android:name=".broadcastReceiver.AlarmBroadcastReceiver"

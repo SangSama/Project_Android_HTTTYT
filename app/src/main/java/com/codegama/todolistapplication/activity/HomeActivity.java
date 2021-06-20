@@ -34,21 +34,23 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void onClick(View v) {
-        if ( btAppointment.getText().equals("Appointment") ) {
+        int id=v.getId();
+        if (id==btAppointment.getId()){
             Intent intent = new Intent(HomeActivity.this, MainActivity.class);
             startActivity(intent);
-        } else if ( btDoctor.getText().equals("Doctor") ) {
-            Intent intent = new Intent(HomeActivity.this, DoctorActivity.class);
+        } else if ( id == btDoctor.getId() ) {
+            Intent intent = new Intent(this, DoctorActivity.class);
             startActivity(intent);
-        }else if ( btStaff.getText().equals("Staff") ) {
-            Intent intent = new Intent(HomeActivity.this, StaffActivity.class);
+        } else if ( id == btStaff.getId() ) {
+            Intent intent = new Intent(this, StaffActivity.class);
             startActivity(intent);
-        }else if ( btTodolist.getText().equals("Todo List") ) {
-            Intent intent = new Intent(HomeActivity.this, TodolistActivity.class);
+        } else if ( id == btTodolist.getId() ) {
+            Intent intent = new Intent(this, TodolistActivity.class);
             startActivity(intent);
-        } else if ( btReport.getText().equals("Report") ) {
-            Intent intent = new Intent(HomeActivity.this, ReportActivity.class);
+        } else if ( id == btReport.getId() ) {
+            Intent intent = new Intent(this, ReportActivity.class);
             startActivity(intent);
         }
+
     }
 }
