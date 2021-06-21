@@ -33,13 +33,6 @@
             android:layout_gravity="center"
             tools:ignore="MissingPrefix" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="right|center"
-            android:background="@drawable/calendar"
-            android:id="@+id/calendar"/>
-
     </FrameLayout>
 
     <LinearLayout
@@ -66,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="70dp"
-            android:text="Add new staff"
+            android:text="Add a new staff"
             android:drawablePadding="10dp"
             android:paddingTop="10dp"
             android:id="@+id/addTask"

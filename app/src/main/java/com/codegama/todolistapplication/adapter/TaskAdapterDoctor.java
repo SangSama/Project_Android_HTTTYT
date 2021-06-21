@@ -64,6 +64,9 @@ public class TaskAdapterDoctor extends RecyclerView.Adapter<TaskAdapterDoctor.Ta
         Doctor doctor = doctorList.get(position);
         holder.name.setText(doctor.getTaskName());
         holder.gender.setText(doctor.getTaskGender());
+        holder.date.setText(doctor.getTaskDate());
+        holder.phone.setText(doctor.getTaskPhone());
+        holder.work.setText(doctor.getTaskWork());
         holder.status.setText(doctor.isComplete() ? "COMPLETED" : "UPCOMING");
         holder.options.setOnClickListener(view -> showPopUpMenu(view, position));
 

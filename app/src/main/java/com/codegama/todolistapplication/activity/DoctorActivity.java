@@ -37,8 +37,6 @@ public class DoctorActivity extends AppCompatActivity implements CreateDoctorBot
     TextView addTask;
     TaskAdapterDoctor taskAdapterDoctor;
     List<Doctor> doctors = new ArrayList<>();
-//    @BindView(R.id.calendar)
-//    ImageView calendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,10 +63,6 @@ public class DoctorActivity extends AppCompatActivity implements CreateDoctorBot
 
         getSavedTasks();
 
-//        calendar.setOnClickListener(view -> {
-//            TodolistShowCalendarViewBottomSheet todolistShowCalendarViewBottomSheet = new TodolistShowCalendarViewBottomSheet();
-//            todolistShowCalendarViewBottomSheet.show(getSupportFragmentManager(), todolistShowCalendarViewBottomSheet.getTag());
-//        });
     }
 
     private void onClick(View v) {

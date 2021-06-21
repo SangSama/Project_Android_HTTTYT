@@ -45,13 +45,13 @@
         android:baselineAligned="false"
         android:gravity="center"
         android:orientation="vertical"
-        android:paddingTop="100dp">
+        android:paddingTop="90dp">
 
         <Button
             android:id="@+id/bt_appointment"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_button_submit"
             android:drawableLeft="@drawable/ic_appointment"
             android:text="Appointment"
@@ -62,7 +62,7 @@
             android:id="@+id/bt_doctor"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_button_submit"
             android:drawableLeft="@drawable/ic_doctor"
             android:text="Doctor"
@@ -73,7 +73,7 @@
             android:id="@+id/bt_staff"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_button_submit"
             android:drawableLeft="@drawable/ic_staff"
             android:text="Staff"
@@ -84,7 +84,7 @@
             android:id="@+id/bt_todolist"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_button_submit"
             android:drawableLeft="@drawable/ic_todolist"
             android:text="Todo List"
@@ -95,12 +95,22 @@
             android:id="@+id/bt_report"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/round_button_submit"
             android:drawableLeft="@drawable/ic_report"
             android:text="Report"
             android:textColor="#ffffff"
             android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="18sp"
+            android:textColor="@color/cardview_light_background"
+            android:background="@drawable/round_button_submit"
+            />
 
     </LinearLayout>
 

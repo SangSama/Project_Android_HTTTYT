@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
 import com.codegama.todolistapplication.model.Task;
 
-@Database(entities = {Task.class}, version = 1, exportSchema = false)
+@Database(entities = {Task.class}, version = 3, exportSchema = false)
 public  abstract class AppDatabase extends RoomDatabase {
 
     public abstract OnDataBaseAction dataBaseAction();

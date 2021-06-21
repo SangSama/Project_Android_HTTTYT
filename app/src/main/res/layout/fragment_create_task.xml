@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:text="Add a apppointment"
+            android:text="Add a new apppointment"
             android:textColor="@android:color/black"
             android:textSize="22sp"
             tools:ignore="MissingPrefix" />

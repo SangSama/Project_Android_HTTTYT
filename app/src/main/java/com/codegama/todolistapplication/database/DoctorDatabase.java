@@ -9,7 +9,7 @@ import androidx.sqlite.db.SupportSQLiteOpenHelper;
 
 import com.codegama.todolistapplication.model.Doctor;
 
-@Database(entities = {Doctor.class}, version = 1, exportSchema = false)
+@Database(entities = {Doctor.class}, version = 3, exportSchema = false)
 public  abstract class DoctorDatabase extends RoomDatabase {
 
     public abstract DoctorOnDataBaseAction doctorDataBaseAction();

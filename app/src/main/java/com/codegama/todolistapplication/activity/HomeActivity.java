@@ -15,6 +15,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     Button btStaff;
     Button btTodolist;
     Button btReport;
+    Button btLogout;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,12 +26,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         btStaff = findViewById(R.id.bt_staff);
         btTodolist = findViewById(R.id.bt_todolist);
         btReport = findViewById(R.id.bt_report);
+        btLogout = findViewById(R.id.bt_logout);
 
         btAppointment.setOnClickListener(this::onClick);
         btDoctor.setOnClickListener(this::onClick);
         btStaff.setOnClickListener(this::onClick);
         btTodolist.setOnClickListener(this::onClick);
         btReport.setOnClickListener(this::onClick);
+        btLogout.setOnClickListener(this::onClick);
     }
 
     public void onClick(View v) {
@@ -49,6 +52,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         } else if ( id == btReport.getId() ) {
             Intent intent = new Intent(this, ReportActivity.class);
+            startActivity(intent);
+        } else if ( id == btLogout.getId() ) {
+            Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         }
 

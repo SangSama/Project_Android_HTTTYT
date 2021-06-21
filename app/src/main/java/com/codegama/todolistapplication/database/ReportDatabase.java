@@ -9,7 +9,7 @@ import androidx.sqlite.db.SupportSQLiteOpenHelper;
 
 import com.codegama.todolistapplication.model.Report;
 
-@Database(entities = {Report.class}, version = 1, exportSchema = false)
+@Database(entities = {Report.class}, version = 3, exportSchema = false)
 public  abstract class ReportDatabase extends RoomDatabase{
 
     public abstract ReportOnDataBaseAction reportDataBaseAction();
