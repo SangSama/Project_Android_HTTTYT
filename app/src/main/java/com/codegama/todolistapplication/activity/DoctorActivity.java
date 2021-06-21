@@ -51,10 +51,10 @@ public class DoctorActivity extends AppCompatActivity implements CreateDoctorBot
         ButterKnife.bind(this);
         setUpAdapterDoctor();
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        ComponentName receiver = new ComponentName(this, AlarmBroadcastReceiver.class);
+//        ComponentName receiver = new ComponentName(this, AlarmBroadcastReceiver.class);
         PackageManager pm = getPackageManager();
-        pm.setComponentEnabledSetting(receiver, PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
-                PackageManager.DONT_KILL_APP);
+//        pm.setComponentEnabledSetting(receiver, PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+//                PackageManager.DONT_KILL_APP);
 
         addTask.setOnClickListener(view -> {
             CreateDoctorBottomSheetFragment createDoctorBottomSheetFragment = new CreateDoctorBottomSheetFragment();
